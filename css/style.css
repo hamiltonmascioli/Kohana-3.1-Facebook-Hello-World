@@ -1,0 +1,331 @@
+
+/* ==== Scroll down to find where to put your styles :) ==== */
+
+/*  HTML5 ✰ Boilerplate  */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; }
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea {  color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||               Your styles !                  ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+
+/* 
+Webkit font smoothing
+This is anti-aliasing for webkit browsers, sadly only in Mac OSX. It basically makes your text render better, 
+and make it more readable, without all the text thinning hacks that we have seen in the past. For further 
+reading check out Tim Van Damme’s article on this.
+
+maxvoltar.com/archive/-webkit-font-smoothing */
+html { -webkit-font-smoothing: antialiased; }
+
+/*
+Font normalisation
+To get rid of rendering inconsistencies that can occur between browsers and OS’s when rendering 
+fonts in pixels, this snippet allows you to size your fonts in such a way that the size and line-height 
+will remain consistent across these platforms for your website. You will basically be setting your font 
+sizes via percentages that can be found here.
+
+fonts.css from the YUI Library: developer.yahoo.com/yui/
+Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
+*/
+body { font:13px sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
+table { font-size:inherit; font:100%; }
+select, input, textarea { font:99% sans-serif; }
+
+/*
+Force Scrollbar on all pages
+*/
+html { overflow-y: scroll; }
+
+
+/*Formatting quoted code
+
+This snippet simply makes the text wrap when it reaches the walls of its container, in this case, 
+the pre tag, whilst still preserving line breaks and white space cross browser. To read up on this, 
+have a look at this article.
+*/
+pre {
+ padding: 15px;
+ white-space: pre; /* CSS2 */
+ white-space: pre-wrap; /* CSS 2.1 */
+ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+ word-wrap: break-word; /* IE */
+}
+
+
+/*Aligning Labels
+
+Alignment of labels with their relevant inputs can be a horrible task to achieve in older browsers. 
+This snippets solves that for us by making it consistent across browsers!
+*/
+
+/* align checkboxes, radios, text inputs with their label */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+
+/*Clickable inputs
+
+For some reason, most browsers don’t apply a pointer cursor to some clickable input’s by default to 
+let the user now that this item is clickable, so we solve this by doing it ourselves.
+*/
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+
+/* Screenreader access
+
+This snippet basically gives us the best of both worlds, allowing the best usability when it comes to link 
+outlines for both screenreaders tabbing through links, and mouse users. To learn more, read this article.
+*/
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color:#607890; }
+a:hover { color:#036; }
+
+/*IE7 image resizing
+
+Ie7 by default uses an image resizing algorithm that means that scaled down images can look far from awesome. 
+To solve this, we simply enable a much better resizing algorithm that is available in Ie7 that produces 
+results similar to what you’d expect from most image editing software. To read more about this, and similar
+ solutions for Ie6, read this insightful article by the Flickr developers.
+*/
+
+/* bicubic resizing for non-native sized IMG:
+code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+/*Print styles
+
+Any decent site should be print ready, as even though we live in a technology driven time, 
+people still like to have  a hard copy of some information. This snippet firstly uses a css 
+media declaration, allowing you to include this in your main stylesheet, and not having to place 
+another link in the head of your document. This benefits load time, as even when the page inst
+ being printed, a browser will always download that extra css file, generating an extra http request. 
+ The snippet then goes on to include some useful print styles such as printing our link urls, and so on.
+
+*/
+
+/*
+* print styles
+* inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/
+*/
+@media print {
+* { background: transparent !important; color: #444 !important; text-shadow: none; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; }
+  abbr:after { content: " (" attr(title) ")"; }    .ir a:after { content: ""; }  /* Don't show links for images */    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }    img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+/*Device orientation
+
+These are just two css media queries you may want to use for your website 
+development. With lots of smart-phones, and tablets being able to orientate 
+their screens from landscape to portrait, you may want to include different 
+styles for each. This is how you would go about achieving this.
+*/
+@media all and (orientation:portrait) {
+/* Style adjustments for portrait mode goes here */
+}
+ 
+@media all and (orientation:landscape) {
+/* Style adjustments for landscape mode goes here */
+}
+
+
+
+
+
+
+
+a {
+	color:#009 !important;
+	text-decoration:none;
+}
+h1 {
+	margin-top:50px 0 0 0;
+	font-size:190%;
+	align:center;
+	color:red;
+}
+h2 {
+	margin:10px 0 20px 0;
+	font-size:130%;
+	align:center;
+}
+p {
+	margin-bottom:20px;
+}
+
+div#container {
+margin-left: auto;
+margin-right: auto;
+width: 800px;
+height:600px;
+padding:20px;
+}
+
+small{
+  color:#CCC;
+}
+
+.foot{
+  margin-top:50px;
+  color:#CCC;
+  font-size:18px;
+  
+}
+body {text-align: center;}
+
+/* Container Fix */
+.containerFix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+* html .containerFix{
+	height: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+@media all and (orientation:portrait) {
+
+}
+
+@media all and (orientation:landscape) {
+
+}
+
+@media screen and (max-device-width: 480px) {
+
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
